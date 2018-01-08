@@ -15,11 +15,11 @@ Vagrant.configure("2") do |config|
     # The hostname the machine should have. Defaults to nil. If nil, 
     # Vagrant will not manage the hostname. If set to a string, the 
     # hostname will be set on boot.
-    config.vm.hostname = "vagrant.test1.dev"
+    config.vm.hostname = "vagrant.RabbitMQ.test"
 
     # Configures networks on the machine:
     # config.vm.network "private_network", type: "dhcp"
-    config.vm.network "private_network", ip: "172.28.128.10"
+    config.vm.network "private_network", ip: "172.28.128.11"
     
     if Vagrant.has_plugin?("vagrant-hostmanager")
         config.hostmanager.enabled = true
